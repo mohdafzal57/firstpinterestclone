@@ -1,0 +1,31 @@
+<% include ./partials/header.ejs %>
+
+  <div
+    class="w-full h-screen bg-zinc-300 flex items-center justify-center bg-[url(https://images.unsplash.com/photo-1619118884592-11b151f1ae11?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-center">
+    <div class="w-[26vw] bg-white px-14 py-10 rounded-[25px] ">
+      <h1 class="text-3xl tracking-tighter text-center font-semibold text-zinc-700 leading-none mb-6">Create New Account</h1>
+      <form action="/register" method="post">
+        <input class="focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 block border-2 rounded-md mb-2 px-3 py-2 w-full" type="text" name="username"
+          placeholder="Username">
+        <input class="focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 block border-2 rounded-md mb-2 px-3 py-2 w-full" type="text" name="fullname"
+          placeholder="fullname">
+        <input class="focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 block border-2 rounded-md mb-2 px-3 py-2 w-full" type="email" name="email"
+          placeholder="Email">
+        <input class="focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 block border-2 rounded-md mb-2 px-3 py-2 w-full" type="contact" name="contact"
+          placeholder="contact">
+        <input class="focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 block border-2 rounded-md mb-2 px-3 py-2 w-full" type="password" name="password"
+          placeholder="Password">
+        <input class="block border-2 rounded-full mb-2 px-3 py-2 w-full bg-red-600 text-white " type="submit"
+          value="Register">
+        <p class="text-[10px] text-zinc-500 text-center mt-5 mb-2 font-semibold mx-auto w-3/4">By continuing, you agree to
+          Pinterest's Terms of Service; Opens a new tab and acknowledge you've read our Privacy Policy; Opens a new tab.
+          Notice at collection; Opens a new tab.</p>
+        <div class="w-[80px] block border-slate-400 m-auto  border-t-2 "></div>
+        <p class="text-[10px] text-zinc-500 text-center mt-2 font-semibold mx-auto w-3/4">Already a member?<a href="/login" class="font-bold text-zinc-800 text-[12px]">
+            Log in</a></p>
+      </form>
+    </div>
+  </div>
+
+
+  <% include ./partials/footer.ejs %>
